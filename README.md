@@ -79,7 +79,7 @@ src/
     table (which reads directly from Context) re-renders instantly with the
     newest note on top — no reload needed.
 
-## Notes on data model (matches the reference screenshot)
+## Notes on data model (matches the reference excel Screenshot)
 
 Lead ID, Practice Name, Contact Person, Specialty, State, Platform, Lead
 Source, Avg Collection, Sales Rep, Priority, Lead Status, Service Type,
