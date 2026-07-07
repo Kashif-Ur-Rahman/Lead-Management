@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Badge from './Badge';
-import { FiChevronUp, FiChevronDown, FiTrash2, FiChevronLeft, FiChevronRight, FiChevronsLeft, FiChevronsRight } from 'react-icons/fi';
+import { FiChevronUp, FiChevronDown, FiTrash2, FiEdit2, FiChevronLeft, FiChevronRight, FiChevronsLeft, FiChevronsRight } from 'react-icons/fi';
 
 const COLUMNS = [
   { key: 'id', label: 'Lead ID' },
@@ -109,6 +109,9 @@ export default function LeadTable({ leads, onDelete }) {
               <td>{lead.agingBucket}</td>
               <td><Badge value={lead.stage} /></td>
               <td>
+                <Link to={`/leads/${lead.id}/edit`} className="icon-btn" title="Edit lead">
+                  <FiEdit2 />
+                </Link>
                 <button
                   type="button"
                   className="icon-btn icon-btn--danger"
